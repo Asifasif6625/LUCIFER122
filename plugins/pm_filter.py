@@ -398,11 +398,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('🔍', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🧽ѕpσngє вσв🧽', callback_data='help')
             ],[
-            InlineKeyboardButton('🧲', url='https://t.me/mlavib'), 
-            InlineKeyboardButton('🏪', callback_data='help'), 
-            InlineKeyboardButton('💊', callback_data='about')
+            InlineKeyboardButton('gσ tσ \n💌puвlíc вσt💌', url='https://t.me/auto_filter_mvbot')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -412,15 +410,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
+            InlineKeyboardButton('ínlínє ѕєαrch',
+            InlineKeyboardButton('вσt αвσut', callback_data='about')
             InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
             InlineKeyboardButton('Auto Filter', callback_data='autofilter')
             ],[
             InlineKeyboardButton('Connection', callback_data='coct'),
             InlineKeyboardButton('Extra Mods', callback_data='extra')
             ],[
-            InlineKeyboardButton('📂file storage📂', callback_data='stats')
+            InlineKeyboardButton('📂dαtαвαѕє📂', callback_data='stats')
             ],[
-            InlineKeyboardButton('⤴️ back', callback_data='start')          
+            InlineKeyboardButton('🧽clσѕє mєѕѕєgє🧽', callback_data='close_data')          
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
