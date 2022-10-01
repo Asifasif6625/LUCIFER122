@@ -37,11 +37,9 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('🔎', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🧽ѕpσngє вσв🧽', callback_data='help')
             ],[
-            InlineKeyboardButton('🧲', url='https://t.me/mlavib'), 
-            InlineKeyboardButton('🏪', callback_data='help'), 
-            InlineKeyboardButton('💊', callback_data='about')
+            InlineKeyboardButton('gσ tσ \n💌puвlíc вσt💌', url='https://t.me/geni_filter_mvbot')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -66,7 +64,7 @@ async def start(client, message):
         ]
 
         if message.command[1] != "subscribe":
-            btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{message.command[1]}")])
+            btn.append([InlineKeyboardButton("ʜy ʙʀᴏ ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ \nᴛʀy ᴀɢᴀɪɴ", callback_data=f"checksub#{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
             text="**Please Join My group or Channel to use this Bot!**",
@@ -76,11 +74,9 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('🔍', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🧽ѕpσngє вσв🧽', callback_data='help')
             ],[
-            InlineKeyboardButton('🧲', url='https://t.me/mlavib'), 
-            InlineKeyboardButton('🏪', callback_data='help'), 
-            InlineKeyboardButton('💊', callback_data='about')
+            InlineKeyboardButton('gσ tσ \n💌puвlíc вσt💌', url='https://t.me/geni_filter_mvbot')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
