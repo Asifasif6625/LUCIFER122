@@ -410,15 +410,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('ínlínє ѕєαrch',
+            InlineKeyboardButton('ínlínє ѕєαrch', switch_inline_query_current_chat=''),
             InlineKeyboardButton('вσt αвσut', callback_data='about')
-            InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
-            InlineKeyboardButton('Auto Filter', callback_data='autofilter')
             ],[
-            InlineKeyboardButton('Connection', callback_data='coct'),
-            InlineKeyboardButton('Extra Mods', callback_data='extra')
+            InlineKeyboardButton('mαnuαl \nfíltєr', callback_data='manuelfilter'),
+            InlineKeyboardButton('αutσ \nfíltєr', callback_data='autofilter')
+            ],[
+            InlineKeyboardButton('👥cσnnєctíσn👥', callback_data='coct'),
+            InlineKeyboardButton('🧠єхtrα mσdє🧠', callback_data='extra')
             ],[
             InlineKeyboardButton('📂dαtαвαѕє📂', callback_data='stats')
+            ],[
+            InlineKeyboardButton('', url='https://t.me/malayalamvibe'),
+            InlineKeyboardButton('', url='https://t.me'),
+            InlineKeyboardButton('', url='') 
             ],[
             InlineKeyboardButton('🧽clσѕє mєѕѕєgє🧽', callback_data='close_data')          
         ]]
