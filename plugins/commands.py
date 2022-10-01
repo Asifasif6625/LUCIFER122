@@ -39,7 +39,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('🧽ѕpσngє вσв🧽', callback_data='help')
             ],[
-            InlineKeyboardButton('gσ tσ \n💌puвlíc вσt💌', url='https://t.me/geni_filter_mvbot')
+            InlineKeyboardButton('gσ tσ \n💌puвlíc вσt💌', url='https://t.me/auto_filter_mvbot')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -76,7 +76,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('🧽ѕpσngє вσв🧽', callback_data='help')
             ],[
-            InlineKeyboardButton('gσ tσ \n💌puвlíc вσt💌', url='https://t.me/geni_filter_mvbot')
+            InlineKeyboardButton('gσ tσ \n💌puвlíc вσt💌', url='https://t.me/auto_filter_mvbot')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
