@@ -8,7 +8,7 @@ from pyrogram.errors.exceptions.bad_request_400 import ChatAdminRequired
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from database.ia_filterdb import Media, get_file_details, unpack_new_file_id
 from database.users_chats_db import db
-from info import CHANNELS, ADMINS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION, LOG_CHANNEL, PICS
+from info import CHANNELS, ADMINS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION, LOG_CHANNEL
 from utils import get_size, is_subscribed, temp
 import re
 logger = logging.getLogger(__name__)
@@ -78,9 +78,10 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('gσ tσ \n💌puвlíc вσt💌', url='https://t.me/auto_filter_mvbot')
         ]]
+        await message.reply_photo('https://telegra.ph/file/2a364dc9241708d296c47.jpg')
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
-            photo=random.choice(PICS),
+            photo=random.choice,
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
