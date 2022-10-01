@@ -421,9 +421,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('📂dαtαвαѕє📂', callback_data='stats')
             ],[
-            InlineKeyboardButton('', url='https://t.me/malayalamvibe'),
-            InlineKeyboardButton('', url='https://t.me'),
-            InlineKeyboardButton('', url='') 
+            InlineKeyboardButton('chαnnєl', url='https://t.me/malayalamvibe'),
+            InlineKeyboardButton('grσup \n1', url='https://t.me/+LzrsFN7cWC02ODJl'),
+            InlineKeyboardButton('grσup \n2', url='https://t.me/+rjw2I6MtjW8xYzRl')
+            ],[
+            InlineKeyboardButton('αutσ fíltєr \nвσt 1', url='https://t.me/auto_filter_mvbot'),
+            InlineKeyboardButton('αutσ fíltєr \nвσt 2', url='https://t.me/genie_filter_bot')
             ],[
             InlineKeyboardButton('🧽clσѕє mєѕѕєgє🧽', callback_data='close_data')          
         ]]
@@ -435,7 +438,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('🤖 Support', url='https://t.me/Ls_Supportz'),
+            InlineKeyboardButton('🤖 Support', url='https://t.me/mlavib'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
             ],[
             InlineKeyboardButton('⤴️ back', callback_data='start'),
